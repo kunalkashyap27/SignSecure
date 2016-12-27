@@ -81,3 +81,16 @@ text-align: center;
     height: -o-calc(100% - 170px);
     width: 100%;
 }
+
+.btn-skip-right {
+
+  float: right;
+
+}
+
+
+.no-padding {
+
+ padding-right: 0;
+
+}
