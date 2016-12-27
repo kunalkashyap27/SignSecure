@@ -147,8 +147,8 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #222222;
-  border-color: transparent;
+  background-color: black;
+  border-color: black;
 }
 .navbar-custom  {
   color: #350812;
@@ -156,7 +156,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-brand {
-  color: #FFFFFF;
+  color: #350812;
   font-family: 'Black Ops One', cursive;
 }
 
@@ -205,8 +205,8 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: transparent;
-    padding: 25px 0;
+    background-color: #222222;
+    padding: 10px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -232,7 +232,7 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
-header {
+/*header {
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -303,7 +303,7 @@ header .intro-text .intro-heading {
     line-height: 40px;
     margin-bottom: 30px;
   }
-}
+}*/
 section {
   padding: 50px 0;
 }

@@ -23,6 +23,12 @@
             $('.navbar-toggle:visible').click();
     });
 
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse-in ul li a').click(function(){ 
+            $('.navbar-toggle-in:visible').click();
+    });
+
+
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
