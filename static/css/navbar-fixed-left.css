@@ -5,6 +5,13 @@
   height: 25%;
 }
 
+.navbar-fixed-left-1 {
+  width: 140px;
+  position: fixed;
+  border-radius: 0;
+  height: 25%;
+  top: 320px;
+}
 
 .navbar-fixed-left .navbar-nav > li {
   float: none;  /* Cancel default li float: left */
