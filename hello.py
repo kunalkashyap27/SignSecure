@@ -9,5 +9,9 @@ def hello():
 def create():
 	return render_template("secondpage.html")
 
+@app.route("/review/")
+def review():
+	return render_template("review.html")
+
 if __name__ == "__main__":
     app.run()
