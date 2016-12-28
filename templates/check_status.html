@@ -116,15 +116,14 @@
                         <div class="col-md-8">
                             <div class= "col-md-12">
                                 <ul class="navbar-fixed-left nav-pills nav-stacked no-bullets">
-                                    <li><a href="#">Pending review</a></li>
-                                    <li><a href="#">View Document</a></li>
-                                    <li><a href="#">Sign Document</a></li>
-                                    <li><a href="#">Send Document</a></li>
-                                </ul>
+                                    <li><a href="#">Draft</a></li>
+                                    <li><a href="#">Pending Response</a></li>
+                                    <li><a href="#">Received</a></li>
+                                    <!-- <li><a href="#">Complete</a></li> -->
+                                </ul>   
 
                                 <ul class="navbar-fixed-left-1 nav-pills nav-stacked no-bullets">
-                                    <li><a href="#" class = "btn btn-success text-center"> Save for later</a></li>
-                                    
+                                    <li><a href="#" class = "btn btn-success text-center">Save for later </a></li>
                                     
                               
                                 </ul>
@@ -142,7 +141,7 @@
                 <div class = "container-fluid">
                     <div class= "row">
                         <div class="col-md-10">
-                            <h1> Review Documents </h1>
+                            <h1> Check Status </h1>
                             <h4> Whatever is the description</h4>
                             <br>
                         </div>
@@ -157,7 +156,7 @@
                     
                     <div class ="row">
                         <div class="col-md-10 st-section-highlight st-section-divider">
-                            <h4>Documents pending review</h4>
+                            <h4>Drafts</h4>
                             <br>
                             <div class="container-fluid">
                                 <div class="row">
@@ -166,9 +165,10 @@
                                            <thead> 
                                             <tr>
                                                 <th>Document</th>
-                                                <th>Sender</th>
-                                                <th>Note</th>
-                                                <th>Recieve Date</th>
+                                                <th>Creator</th>
+                                                <th>Status</th>
+                                                <th>Created Date</th>
+                                                <th>Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -177,12 +177,14 @@
                                                 <td>Abhilash</td>
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
+                                                <td><a href="#" class= "btn btn-danger">Delete</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a href="#">File 2</a></td>
                                                 <td>Abhilash</td>
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
+                                                <td><a href="#" class= "btn btn-danger">Delete</a></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -192,103 +194,95 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class ="row">
                         <div class="col-md-10 st-section-highlight st-section-divider">
-
+                            <h4>Pending Response</h4>
+                            <br>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class ="col-md-10 no-padding">
-                                        <h4>View Document</h4>
-                                        <p>View, edit or suggest edits</p>
-                                        <br>
+                                    <div class= "col-md-12">
+                                        <table class = "table table-hover">
+                                           <thead> 
+                                            <tr>
+                                                <th>Document</th>
+                                                <th>Sent to</th>
+                                                <th>Status</th>
+                                                <th>Created Date</th>
+                                                <th>Remind</th>
+                                                <th>Recall</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><a href="#">File 1</a></td>
+                                                <td>Abhilash</td>
+                                                <td>For review</td>
+                                                <td>Dec 28,2016</td>
+                                                <td><a href="#" class= "btn btn-warning">Remind</a></td>
+                                                <td><a href="#" class= "btn btn-danger">Recall</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">File 2</a></td>
+                                                <td>Abhilash</td>
+                                                <td>For review</td>
+                                                <td>Dec 28,2016</td>
+                                                <td><a href="#" class= "btn btn-warning">Remind</a></td>
+                                                <td><a href="#" class= "btn btn-danger">Recall</a></td>
+                                            </tr>
+                                            </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class ="col-md-2 no-padding">
-                                        <a href="#" class="btn btn-primary active btn-skip-right">Skip</a>
-                                    </div>
-                                </div>
-                            </div>    
-                             
-
-                            <textarea>
-                            <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                            </p>
-
-                            <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,h when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                            </p>
-                            </textarea>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-10 st-section-highlight st-section-divider">
-                        
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class ="col-md-10 no-padding">
-                                        <h4> Sign Document</h4>
-                                        <p> Click on the sign icons to sign the document </p>
-                                        <i draggable="true" data-insert-html="<h1>HEADER GOES HERE</h1>" class="fa fa-pencil-square-o"></i><p>Sign</p>
-                                    </div>
-                                    <div class ="col-md-2 no-padding">
-                                        <a href="#" class="btn btn-primary active btn-skip-right">Skip</a>
-                                    </div>
-                                </div>
-                            </div>    
-
-
-
-                            
-                   
-                                <div id="clientframe-container">
-                                    <iframe id="clientframe" srcdoc= "<p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,h when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                </p>" src="demo_iframe_srcdoc.htm" frameborder=1></iframe>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-10 st-section-highlight st-section-divider">
-                        
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class ="col-md-10 no-padding">
-                                        <h4> Send Document</h4>
-                                        <br>
-                                    </div>
-
-                                    <div class ="col-md-2 no-padding">
-                                        <a href="#" class="btn btn-primary active btn-skip-right">Skip</a>
-                                    </div>
-                                </div>
-                            </div>    
-
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="First send to (add reciepients seperated by semicolon)" id="name" required data-validation-required-message="Please enter email id seperated by semicolons">
-                                        <p class="help-block text-danger"></p>
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Then send to(add reciepients seperated by semicolon)" id="name" required data-validation-required-message="Please enter email id seperated by semicolons">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Add message" id="message"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-                                <div class ="text-center">
-                                    <a href="#" class="btn btn-xl btn-center">Send Document</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class ="row">
+                        <div class="col-md-10 st-section-highlight st-section-divider">
+                            <h4>Recieved</h4>
+                            <br>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class= "col-md-12">
+                                        <table class = "table table-hover">
+                                           <thead> 
+                                            <tr>
+                                                <th>Document</th>
+                                                <th>Sent to</th>
+                                                <th>Status</th>
+                                                <th>Created Date</th>
+                                                <th>Complete</th>
+                                                <th>Refuse</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><a href="#">File 1</a></td>
+                                                <td>Abhilash</td>
+                                                <td>For review</td>
+                                                <td>Dec 28,2016</td>
+                                                <td><a href="#" class= "btn btn-success">Complete</a></td>
+                                                <td><a href="#" class= "btn btn-danger">Refuse</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">File 2</a></td>
+                                                <td>Abhilash</td>
+                                                <td>For review</td>
+                                                <td>Dec 28,2016</td>
+                                                <td><a href="#" class= "btn btn-success">Complete</a></td>
+                                                <td><a href="#" class= "btn btn-danger">Refuse</a></td>
+                                            </tr>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 
                    <div class="col-md-2"></div>

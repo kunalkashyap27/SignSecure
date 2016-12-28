@@ -13,5 +13,10 @@ def create():
 def review():
 	return render_template("review.html")
 
+@app.route("/check_status/")
+def check_status():
+	return render_template("check_status.html")
+
+
 if __name__ == "__main__":
     app.run()
