@@ -29,8 +29,8 @@
     <link href="/static/css/agency-in.css" rel="stylesheet">
     <link href="/static/css/navbar-fixed-left.css" rel="stylesheet">
 
-    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea', height : 300 });</script>
+    <!-- <script src="//cdn.tinymce.com/4/tinymce.min.js"></script> --!
+    <!--<script>tinymce.init({ selector:'textarea', height : 300 });</script> --!>
 
     <script src="/static/js/dnd.js"></script>
 
@@ -218,16 +218,16 @@
                                                 <td>Abhilash</td>
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
-                                                <td><a href="#" class= "btn btn-warning">Remind</a></td>
-                                                <td><a href="#" class= "btn btn-danger">Recall</a></td>
+                                                <td><a href="#" class= "btn btn-warning" data-toggle ="modal" data-target ="#remindModal">Remind</a></td>
+                                                <td><a href="#" class= "btn btn-danger" data-toggle ="modal" data-target ="#remindModal">Recall</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a href="#">File 2</a></td>
                                                 <td>Abhilash</td>
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
-                                                <td><a href="#" class= "btn btn-warning">Remind</a></td>
-                                                <td><a href="#" class= "btn btn-danger">Recall</a></td>
+                                                <td><a href="#" class= "btn btn-warning" data-toggle ="modal" data-target ="#remindModal">Remind</a></td>
+                                                <td><a href="#" class= "btn btn-danger" data-toggle ="modal" data-target ="#remindModal">Recall</a></td>
                                             </tr>
                                             </tr>
                                             </tbody>
@@ -351,7 +351,30 @@
                 </div>
             </div>
         </div>
-  </div>
+    </div>
+
+    <div class="modal fade" id="remindModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title alert">Would you like to add a note ?</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                                    <textarea class="form-control" placeholder="Add message" id="message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+       
        
     
     <!-- jQuery -->
