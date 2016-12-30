@@ -73,6 +73,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#loginModal" data-toggle="modal">Login</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -542,7 +545,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>                                
 
-                                <form>
+                                </form>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="change_image_to_done(1);"> Submit OTP   </button>
                             </div>
                         </div>
@@ -551,6 +554,48 @@
             </div>
         </div>
     </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-3">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class= "title">Sign Secure</h2>
+
+                                <form>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your username" id="username" required data-validation-required-message="Please enter your username.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Your password" id="password" required data-validation-required-message="Please enter your password">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <button type="button" class="btn btn-primary">Login</button>
+
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -567,7 +612,7 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2 class= "title">Sign Secure</h2>
-                                <object data="/static/test_signed_kunal.pdf" type="application/pdf" width="800" height="800">>
+                                <object data="/static/test_signed_kunal.pdf" type="application/pdf" width="800" height="800">
                             </div>
                         </div>
                     </div>
@@ -691,6 +736,57 @@
             </div>
         </div>
     </div>
+
+    <!--Login Modal -->
+    <div class="portfolio-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class= "title">Sign Secure</h2>
+
+                                <form>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Your Aadhar Number" id="aadhar" required data-validation-required-message="Please enter your aadhar number">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <button type="button" class="btn btn-primary"> Get OTP</button>
+
+                                <br>
+                                <br>
+
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="6 Digit OTP" id="otp" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>                                
+
+                                <form>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="change_image_to_done(1);"> Submit OTP   </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- jQuery -->
     <script src="/static/vendor/jquery/jquery.min.js"></script>
