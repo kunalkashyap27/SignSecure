@@ -119,11 +119,11 @@
                                     <li><a href="#">Draft</a></li>
                                     <li><a href="#">Pending Response</a></li>
                                     <li><a href="#">Received</a></li>
-                                    <!-- <li><a href="#">Complete</a></li> -->
+                                    <li><a href="#">Completed</a></li>
                                 </ul>   
 
-                                <ul class="navbar-fixed-left-1 nav-pills nav-stacked no-bullets">
-                                    <li><a href="#" class = "btn btn-success text-center">Save for later </a></li>
+                                <!-- <ul class="navbar-fixed-left-1 nav-pills nav-stacked no-bullets">
+                                    <li><a href="#" class = "btn btn-success text-center">Save for later </a></li> -->
                                     
                               
                                 </ul>
@@ -177,14 +177,14 @@
                                                 <td>Abhilash</td>
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
-                                                <td><a href="#" class= "btn btn-danger">Delete</a></td>
+                                                <td><a href="#" class= "btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a href="#">File 2</a></td>
                                                 <td>Abhilash</td>
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
-                                                <td><a href="#" class= "btn btn-danger">Delete</a></td>
+                                                <td><a href="#" class= "btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</a></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -253,7 +253,7 @@
                                                 <th>Status</th>
                                                 <th>Created Date</th>
                                                 <th>Complete</th>
-                                                <th>Refuse</th>
+                                                <th>Delete</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -263,7 +263,7 @@
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
                                                 <td><a href="#" class= "btn btn-success">Complete</a></td>
-                                                <td><a href="#" class= "btn btn-danger">Refuse</a></td>
+                                                <td><a href="#" class= "btn btn-danger">Delete</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a href="#">File 2</a></td>
@@ -271,7 +271,49 @@
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
                                                 <td><a href="#" class= "btn btn-success">Complete</a></td>
-                                                <td><a href="#" class= "btn btn-danger">Refuse</a></td>
+                                                <td><a href="#" class= "btn btn-danger">Delete</a></td>
+                                            </tr>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class ="row">
+                        <div class="col-md-10 st-section-highlight st-section-divider">
+                            <h4>Completed</h4>
+                            <br>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class= "col-md-12">
+                                        <table class = "table table-hover">
+                                           <thead> 
+                                            <tr>
+                                                <th>Document</th>
+                                                <th>Creator</th>
+                                                <th>Notes</th>
+                                                <th>Last reviewer</th>
+                                                <th>Complete Date</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><a href="#">File 1</a></td>
+                                                <td>Abhilash</td>
+                                                <td>For review</td>
+                                                <td>Kunal</td>
+                                                <td>26 Dec 2016</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">File 1</a></td>
+                                                <td>Abhilash</td>
+                                                <td>For review</td>
+                                                <td>Kunal</td>
+                                                <td>26 Dec 2016</td>
                                             </tr>
                                             </tr>
                                             </tbody>
@@ -284,12 +326,32 @@
 
 
 
+
+
                 
                    <div class="col-md-2"></div>
                 </div>
             </div>
         </div>
     </div>
+
+      <!-- Modal -->
+    <div class="modal fade" id="deleteModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title alert">Just making sure</h4>
+                </div>
+                <div class="modal-body alert alert-danger">
+                    <p>Pressing ok will delete this file forever! Close the window to cancel the deleting action</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+        </div>
+  </div>
        
     
     <!-- jQuery -->
