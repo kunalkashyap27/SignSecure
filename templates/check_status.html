@@ -262,16 +262,16 @@
                                                 <td>Abhilash</td>
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
-                                                <td><a href="#" class= "btn btn-success">Complete</a></td>
-                                                <td><a href="#" class= "btn btn-danger">Delete</a></td>
+                                                <td><a href="#" class= "btn btn-success" data-toggle="modal" data-target="#completeModal">Complete</a></td>
+                                                <td><a href="#" class= "btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a href="#">File 2</a></td>
                                                 <td>Abhilash</td>
                                                 <td>For review</td>
                                                 <td>Dec 28,2016</td>
-                                                <td><a href="#" class= "btn btn-success">Complete</a></td>
-                                                <td><a href="#" class= "btn btn-danger">Delete</a></td>
+                                                <td><a href="#" class= "btn btn-success" data-toggle="modal" data-target="#completeModal">Complete</a></td>
+                                                <td><a href="#" class= "btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</a></td>
                                             </tr>
                                             </tr>
                                             </tbody>
@@ -374,6 +374,24 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="completeModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title alert">Just making sure</h4>
+                </div>
+                <div class="modal-body alert alert-success">
+                    <p>Pressing ok will lock this file forever, you wont be able to make futher edits! Close the window to cancel the completion action</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Complete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
        
        
     
