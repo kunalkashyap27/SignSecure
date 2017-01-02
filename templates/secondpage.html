@@ -117,10 +117,10 @@
                             <div class= "col-md-12">
                                 <ul class="navbar-fixed-left nav-pills nav-stacked no-bullets">
                                     <li><a href="#">Import Document</a></li>
-                                    <li><a href="#edit">Edit Document</a></li>
-                                    <li><a href="#">Set sign locations</a></li>
+                                    <li><a href="#" onclick="smoothScroll(document.getElementById('edit'))">Edit Document</a></li>
+                                    <li><a href="#" onclick="smoothScroll(document.getElementById('set_sign'))">Set sign locations</a></li>
                                     <!-- <li><a href="#">Sign Workflow</a></li> -->
-                                    <li><a href="#">Send for Review</a></li>
+                                    <li><a href="#" onclick="smoothScroll(document.getElementById('send'))">Send for Review</a></li>
                               
                                 </ul>
 
@@ -180,7 +180,7 @@
 
                     
                     <div class="row">
-                        <div class="col-md-10 st-section-highlight st-section-divider">
+                        <div class="col-md-10 st-section-highlight st-section-divider" id="edit">
 
                             <div class="container-fluid">
                                 <div class="row">
@@ -189,7 +189,7 @@
                                         <br>
                                     </div>
                                     <div class ="col-md-2 no-padding">
-                                        <a href="#" class="btn btn-primary active btn-skip-right">Skip</a>
+                                        <a href="#" class="btn btn-primary active btn-skip-right" onclick="smoothScroll(document.getElementById('set_sign'))">Skip</a>
                                     </div>
                                 </div>
                             </div>    
@@ -210,7 +210,7 @@
                     
 
                     <div class="row">
-                        <div class="col-md-10 st-section-highlight st-section-divider">
+                        <div class="col-md-10 st-section-highlight st-section-divider" id="set_sign">
                         
                             <div class="container-fluid">
                                 <div class="row">
@@ -220,7 +220,7 @@
                                         <i draggable="true" data-insert-html="<h1>HEADER GOES HERE</h1>" class="fa fa-pencil-square-o"></i><p>Sign</p>
                                     </div>
                                     <div class ="col-md-2 no-padding">
-                                        <a href="#" class="btn btn-primary active btn-skip-right">Skip</a>
+                                        <a href="#" class="btn btn-primary active btn-skip-right" onclick="smoothScroll(document.getElementById('send'))">Skip</a>
                                     </div>
                                 </div>
                             </div>    
@@ -238,7 +238,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-10 st-section-highlight st-section-divider">
+                        <div class="col-md-10 st-section-highlight st-section-divider" id="send">
                         
                             <div class="container-fluid">
                                 <div class="row">
