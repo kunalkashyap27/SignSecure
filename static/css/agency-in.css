@@ -205,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: #222222;
+    background-color: #0c1a4c;
     padding: 10px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -225,7 +225,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #0c1a4c;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {

@@ -10,7 +10,7 @@
   position: fixed;
   border-radius: 0;
   height: 25%;
-  top: 320px;
+  top: 80px;
 }
 
 .navbar-fixed-left .navbar-nav > li {
@@ -93,5 +93,119 @@ text-align: center;
 
  padding-right: 0;
  padding-left:0;
+
+}
+
+.greenButton {
+  background-color:#0c4c3e; 
+  border-color:#0c4c3e;
+}
+
+#exTab1 {
+ margin-top: 30px;
+}
+
+#exTab1 .tab-content {
+  color : black;
+  background-color: white;
+  padding : 5px 15px;
+}
+
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+.underline_tab>li.active>a, .underline_tab>li.active>a:focus, .underline_tab>li.active>a:hover
+{
+    color: black;
+    background-color: white;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+
+}
+
+.underline_tab>li>a {
+
+    color: grey;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    margin-left:10px; 
+
+}
+
+.doc-panel {
+  margin-bottom: 1px; 
+  margin-top: 10px
+}
+
+.blue-file {
+  color:#0c1a4c;
+}
+
+.second-line {
+  font-size:9px;
+}
+
+.choice-modal {
+  border: 2px solid #0c1a4c;
+}
+
+.choice-modal-header {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.grey-background {
+  background-color: #aaaaaa;
+}
+
+.verticle-line {
+  border-left: 2px solid #ff0000; 
+  height: 100px;
+}
+
+.verticle-line-right {
+  border-right: 2px solid #ff0000; 
+  height: 100px;
+}
+
+
+.invisible-line {
+  border-left: 2px solid white; 
+  height: 50px;
+}
+
+.custom-input {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+
+}
+
+.bottom-line {
+  border-bottom: 2px solid black; 
+  margin-bottom: 20px;
+}
+
+.custom-padding {
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:5px;
+  padding-bottom: 0px;
+}
+
+.btn-signbar {
+  
+  width: 120%;
+  background-color: #cecccc;
+  border-radius: 20px; 
+  margin-bottom: 20px;
 
 }
