@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SignSecure</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+
+    <!-- KK : Adding new fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Allerta+Stencil|Black+Ops+One|Bungee|Bungee+Inline|Damion|Dhurjati|Monoton|Montserrat|Orbitron|Oswald|Pacifico|Roboto+Slab|Russo+One|Varela+Round" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <!-- KK - Changing CSS to expanded version so that edits reflect-->
+    <link href="/static/css/agency-in.css" rel="stylesheet">
+    <link href="/static/css/navbar-fixed-left.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/static/vendor/bower_components/tinymce/tinymce.js"></script>
+    <script type="text/javascript" src="/static/vendor/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/static/vendor/bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+    <!-- <script>tinymce.init({ selector:'textarea', height : 300 });</script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/static/js/dnd.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top" style="color: #0c1a4c;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <!-- KK : Changing Title -->
+                <a class="navbar-brand page-scroll" href="#page-top">Sign Secure</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="/logout"><i class="fa fa-user-circle" aria-hidden="true"></i>User Name</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse-in -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2" id="left panel">                
+            </div>
+            <div class="col-md-8" id="middle panel">
+                <div class = "container-fluid">
+                    <div class= "col-md-6">
+                        <div class = "invisible-line">
+                        </div>
+                        <h4 class="text-center">Login<h4>
+                        <form>
+                            
+                            
+
+                            <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <br>
+                            
+
+                            <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key" aria-hidden="true"></i></span>
+                            <input type="Password" class="form-control" placeholder="password" aria-describedby="basic-addon1">
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+
+                            <button type="button" class="btn btn-primary  btn-block greenButton" data-dismiss="modal"> Login</button>
+
+                        </form>
+                    </div>
+                    <div class= "col-md-6">
+                        <div class = "invisible-line">
+                        </div>
+                        <h4 class="text-center">Sign Up<h4>
+                        <form>
+                            
+                            
+                            <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Full Name" aria-describedby="basic-addon1">
+                            </div>
+
+                            <br>
+
+                            <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <br>                            
+
+                            <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <button type="button" class="btn btn-primary  btn-block greenButton" style="margin-top:4px"> SignUp</button>
+
+                        </form>
+                    </div>                   
+ 
+                </div><!-- Middle Panel-Container --> 
+            </div> <!-- Middle Panel -->
+            <div class="col-md-2" id="right panel">
+ 
+            </div>
+        </div>
+    </div>            
+            
+    
+    <!-- jQuery -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+    <script src="/static/js/contact_me.js"></script>
+    <script src="/static/js/review.js"></script>
+    <script type="text/javascript">
+    </script>   

@@ -25,6 +25,10 @@ def doc_editor():
 def doc_signer():
 	return render_template("doc_signer.html")
 
+@app.route("/login/")
+def login():
+	return render_template("login.html")
+
 @app.route("/check_status/")
 def check_status():
 	return render_template("check_status.html")
